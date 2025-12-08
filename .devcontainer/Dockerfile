@@ -28,6 +28,9 @@ RUN sudo apt update && sudo apt upgrade -y
 RUN sudo apt install -y git
 # Install gedit
 RUN sudo apt install -y gedit
+# Install OpenCV dependencies
+RUN sudo apt update
+RUN sudo apt install -y ros-jazzy-cv-bridge
 # Rosdep update
 RUN rosdep update
 
